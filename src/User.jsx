@@ -1,12 +1,13 @@
 import { useState } from "react";
 
 function User(){
-const [count,setcount] = useState(0);
+ const [count,setcount] = useState(0);
 
         return(
-                <div>
-                        {/* <h1>User component</h1> */}
-                        <h1>{count}</h1>
+           <>
+           <h1>User component</h1>
+           <p>How we can write multiple condition in react</p>
+              <h1>{count}</h1>
                         <button onClick={()=>setcount(count+1)}>counter</button>
                         {
                                  count === 0?<h1>condition0</h1>:
@@ -19,7 +20,9 @@ const [count,setcount] = useState(0);
                                  <h1>otherconditon</h1>     
                                 
                         }
-                </div>
+                
+           </>
+                     
         );
 }
 
